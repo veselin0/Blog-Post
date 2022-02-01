@@ -4,8 +4,10 @@ const BlogContext = createContext();
 
 export const BlogProvider = ({children}) => {
     return (
-        <BlogContext.Provider value={1}>
+        <BlogContext.Provider value={['Gocho!', 'Bocho', 'Docho']}>
             {children}
         </BlogContext.Provider>
     );
 };
+
+export default BlogContext;
